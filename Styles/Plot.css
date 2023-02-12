@@ -5,10 +5,6 @@
 	padding: 0;
 }
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body{
     width: 100%;
     margin: 0 auto;
@@ -39,7 +35,6 @@ header p{
 header img{
     padding: 0px 30px 10px 30px;
     float: left;
-    background-blend-mode: color;
 }
 
 
@@ -85,101 +80,18 @@ header img{
     clear: both;
     display: block;
 }
-
-/* the styles for the main */
-
-main section{
-    width: 50%;
-    float: left;
-    padding-left: 10em;
-    padding-right: 3em;
-    padding-bottom: 5em;
-    padding-top: 5em;
+section ul{
+	list-style-type: circle;
 }
 
-section h2{
-    margin-left: 1em;
+main h2{
+    margin-top: 2em;
     margin-bottom: 1em;
     font-size: 300%;
+    text-align: center;
 }
 
-section p{
-    margin-bottom: 1em;
-    margin-left: 2em;
+main p{
+    text-align: center;
     font-size: 200%;
 }
-
-h2.Border{
-    padding-top: 1em;
-    border-top: 3px dashed red;
-}
-
-h2.Author{
-    padding-top: 1em;
-    border-top: 3px dashed red;
-}
-
-p#Eiichiro{
-    margin-bottom: 10em;
-}
-a#Plot{
-    font-size: 100%;
-    margin-bottom: 1em;
-    text-decoration: none;
-}
-
-img.Oda{
-    float: left;
-    margin-left: 4em;
-    margin-right: 1em;
-    margin-bottom: .1em;
-    border: 1px solid black;
-}
-
-img#gif{
-    margin-left: 4em;
-    margin-bottom: 3em;
-}
-
-
-
-/* the styles for the aside */
-
-main aside{
-    width:40%;
-    float: right;
-    
-}
-
-aside h2{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 250%;
-    text-align: center;
-}
-
-aside h3{
-    text-align: center;
-    font-size: 150%;
-}
-
-aside img{
-    margin-left: 22em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    border: 1px solid black;
-}
-
-/* The styles for footer */
-footer{
-    font-size: 150%;
-    clear: both;
-    text-align: center;
-    background-color: #F0D5A8;
-    padding: 1em 0em;
-}
-
-
-
-
-
