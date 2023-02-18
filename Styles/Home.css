@@ -234,12 +234,32 @@ footer{
         margin-right: 1.5em;
     }
     header p {
-        font-size: 1em;
-        margin-right: 1.5em;
+        font-size: 1.5em;
+        margin-right: 2em;
     }
     header img {
         width: 40%;
         height: 40%;
+    }
+    section h2{
+        font-size: 1.5em;
+    }
+    aside h2 {
+        font-size: 1.5em;
+    }
+    aside h3 {
+        font-size: 1em;
+    }
+    aside img {
+        width: 50%;
+        height: 20%;
+    }
+    img.Oda {
+        width: 25%;
+        height: 15%;
+    }
+    section p{
+        font-size: 1em;
     }
     #nav_menu ul li a {
         font-size: 1.2em;
@@ -285,7 +305,7 @@ footer{
         height: 40%;
     }
     img.Oda {
-        width: 50%;
-        height: 50%;
+        width: 25%;
+        height: 15%;
     }
 }
