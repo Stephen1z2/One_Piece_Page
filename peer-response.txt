@@ -1,0 +1,5 @@
+Fix/suggestion 1: Sugguestion from Alex Glydewell- "I did notice you are missing a return to top link on the bottom of the home page."
+	Resolution: I added a return to the top of page link on the home page.
+
+Fix/suggestion 2: Tatsumi Tambo -  "In addition Zoro and Sanji's link connected with home page." 
+	Resolution: The links for the Zoro and Sanji page on my index page linked back to the home page instead of linking to their respected pages. I fixed the links so they now go to the correct pages.

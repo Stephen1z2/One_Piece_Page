@@ -4,6 +4,10 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+	font-family: OnePiece;
+	src: url("one_piece.ttf");
+}
 
 html{
     font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +30,7 @@ header {
 
 header h1{
     text-align: center;
+    font-family: OnePiece;
     padding-top: .5em;
     font-size: 5em;
     color: black;
@@ -33,6 +38,7 @@ header h1{
 
 header p{
     text-align: center;
+    font-family: OnePiece;
     font-size: 2em;
     padding-top: 1em;
     color: black;
@@ -53,6 +59,7 @@ header img{
 
 #nav_menu ul {
     display: flex;
+    font-family: OnePiece;
     flex-basis: 100%;
     justify-content: space-between;
 	list-style-type: none;
@@ -108,9 +115,10 @@ main section{
 
 section h2{
     margin-top: 4%;
-    margin-bottom: 3.5%;
+    font-family: OnePiece;
+    margin-bottom: 2%;
     margin-left: 10%;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 section p{
@@ -156,6 +164,11 @@ img#gif{
     margin-bottom: 3em;
 }
 
+p.top{
+    font-family: OnePiece;
+    font-size: 3em;
+}
+
 
 
 /* the styles for the aside */
@@ -166,10 +179,11 @@ main aside{
 }
 
 aside h2{
+    font-family: OnePiece;
     padding-left: 2%;
     margin-left: 5%;
     margin-top: 2em;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 aside h3{
@@ -188,6 +202,13 @@ aside img{
     margin-right: 2%;
     border: 1px solid black;
 }
+
+p.top{
+    flex-basis: 100%;
+    text-align: center;
+    font: 3em;
+}
+
 
 /* The styles for footer */
 footer{
@@ -306,6 +327,7 @@ footer{
     img.Oda {
         width: 25%;
     }
+
 }
 @media only screen and (max-width: 395px) {
     body {

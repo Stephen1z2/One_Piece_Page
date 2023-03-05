@@ -4,6 +4,10 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+	font-family: OnePiece;
+	src: url("one_piece.ttf");
+}
 
 body{
     width: 100%;
@@ -18,6 +22,7 @@ header {
     background-color: #28b61b;
     padding: 1.5em 0 5em 0;
     width: 100%;
+    font-family: OnePiece;
 }
 
 header h1{
@@ -55,6 +60,7 @@ header img{
 	margin: 0;
 	padding: 0;
 	position: relative;
+    font-family: OnePiece;
 }
 #nav_menu ul li {
     flex-basis: 20%;
@@ -99,7 +105,7 @@ article{
     font-family: Arial, Helvetica, sans-serif;
     column-count: 2;
     column-gap: 3em;
-    column-rule: 2px dashed #2e89b4;
+    column-rule: 2px dashed #28b61b;
     font-size: 200%;
     margin-top: 3em;
     margin-left: 2%;
@@ -108,11 +114,12 @@ article{
 
 
 article h1{
-    font-size: 3em;
+    font-size: 4.5em;
     margin-top: .5em;
     margin-left: .5em;
     margin-bottom: .5em;
     column-span: all;
+    font-family: OnePiece;
 }
 
 article p{
