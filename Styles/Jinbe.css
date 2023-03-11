@@ -9,10 +9,6 @@
 	src: url("one_piece.ttf");
 }
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body{
     width: 100%;
     max-width: 2560px;   
@@ -23,22 +19,22 @@ body{
 
 /* the styles for the header */
 header {
-    background-color: #F0D5A8;
+    background-color: #73e6ff;
     padding: 1.5em 0 5em 0;
     width: 100%;
+    font-family: OnePiece;
 }
 
 header h1{
     text-align: center;
-    font-family: OnePiece;
     padding-top: .5em;
     font-size: 5em;
+    padding-right: 15%;
     color: black;
 }
 
 header p{
     text-align: center;
-    font-family: OnePiece;
     font-size: 2em;
     padding-top: 1em;
     color: black;
@@ -53,19 +49,18 @@ header img{
 }
 
 
+
 /* the styles for the nav menu */
-/* nav menu is using flex container (I think) */
-/* I personally dont like the vertical nav menu when screen size gets small. I kept it horizontal */
 
 #nav_menu ul {
     display: flex;
-    font-family: OnePiece;
     flex-basis: 100%;
     justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
+    font-family: OnePiece;
 }
 #nav_menu ul li {
     flex-basis: 20%;
@@ -74,11 +69,11 @@ header img{
     display: block;
     text-align: center;
     text-decoration: none;
-    background-color: #a90000;
+    background-color: #FFB6C1;
     padding: 5%;
     color: white;
     font-weight: bolder;
-    border: 1px solid black;
+    border: 1px solid white;
     font-size: 2em;
 }
 #nav_menu a.current {
@@ -98,53 +93,47 @@ header img{
     display: block;
 }
 
-/* the styles for the main */
+/* styles for main (column layout) */
 
 main{
     display: flex; /* main is using flex container */
     margin-bottom: 15em;
 }
 
-main section{
-    flex-basis: 90%; /* section is using flex container */
-    order: 1;
-    margin-right: 2%;
-    margin-top: 2%;
+article{
+    flex-basis: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    column-gap: 3em;
+    column-rule: 2px dashed black;
+    column-count: 2;
+    font-size: 200%;
+    margin-top: 3em;
     margin-left: 2%;
+    margin-right: 1.5%;
+    order: 1;
 }
 
-figure {
-    margin-top: 10em;
-    align-items: center;
+
+article h1{
+    font-size: 3.5em;
+    margin-top: .5em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+    column-span: all;
+    font-family: OnePiece;
 }
 
-figcaption {
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    font-size: 5em;
-    padding-bottom: .25em;
+article p{
+    font-size: 1.5em;
+    margin-bottom: 5em;
 }
 
-table {
+article img{
+    float: left;
+    width: 100%;
+    max-width: 500px;
     border: 1px solid black;
-    border-collapse: collapse;
-    margin: auto;
-}
-th, td {
-    border: 1px solid black;
-    text-align: left;
-    padding: .2em .7em;
-    font-size: 3em;
-}
-
-th {
-    background-color: #F0D5A8;
-}
-
-main img {
-    width: 90%;
-    max-width: 300px;
+    margin-right: 1em;
 }
 
 /* The styles for footer */
@@ -152,15 +141,10 @@ footer{
     font-size: 100%;
     clear: both;
     text-align: center;
-    background-color: #F0D5A8;
+    background-color: #73e6ff;
     padding: 1em 0em;
     margin-top: 5em;
 }
-
-
-
-
-
 
 
 @media only screen and (max-width: 1254px) {
@@ -168,14 +152,18 @@ footer{
         font-size: 1.2em;
     }
 
-    figcaption {
-        font-size: 4em;
+    article h1 {
+        font-size: 3em;
     }
+    
 
-    th, td {
-        font-size: 2em;
+}
+
+@media only screen and (max-width: 1109px) {
+
+    article h1 {
+        font-size: 3em;
     }
-
 }
 
 @media only screen and (max-width: 756px) {
@@ -201,43 +189,66 @@ footer{
         font-size: .8em;
     }
 
-    figcaption {
-        font-size: 2em;
+    main {
+        flex-direction: column;
+        margin-bottom: 5em;
+        font-size: .5em;
     }
 
-    th, td {
-        font-size: 1em;
+    article {
+        column-count: 1;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+
+    article img {
+        float:none;
+        margin-bottom: 1em;
     }
 }
+
+@media only screen and (max-width: 905px) {
+     article h1 {
+        font-size: 2.5em;
+    }
+
+}
+    
 
 @media only screen and (max-width: 498px) {
     
     header h1 {
         font-size: 2.5em;
     }
+    header p {
+        font-size: 1.2em;
+    }
 
     #nav_menu ul li a {
         font-size: .6em;
     }
 
-    figure {
-        margin-top: 5em;
-        margin-bottom: 1em;
+    article img {
+        width: 70%;
+        margin-left: 2%;
     }
 
-    th, td {
-        font-size: 1em;
+    article h1 {
+        font-size: 2em;
     }
-
-    figcaption {
+   
+    article p {
         font-size: 1.5em;
+        padding-left: 2%;
+    } 
+    footer {
+        font-size: .8em;
     }
+}
 
 @media only screen and (max-width: 400px) {
     #nav_menu ul li a {
         font-size: .5em;
     }
-
-}
 
 }

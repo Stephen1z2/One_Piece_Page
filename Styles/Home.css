@@ -100,7 +100,7 @@ header img{
 
 /* the styles for the main */
 
-main{
+#flex{
     display: flex; /* main is using flex container */
     margin-bottom: 15em;
 }
@@ -297,7 +297,7 @@ footer{
     #nav_menu ul li a {
         font-size: .8em;
     }
-    main {
+    #flex {
         flex-direction: column;
         margin-bottom: 5em;
     }
