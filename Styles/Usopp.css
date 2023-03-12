@@ -104,7 +104,7 @@ article{
     flex-basis: 100%;
     font-family: Arial, Helvetica, sans-serif;
     column-gap: 3em;
-    column-rule: 2px dashed black;
+    column-rule: 2px dashed brown;
     column-count: 2;
     font-size: 200%;
     margin-top: 3em;
@@ -228,6 +228,9 @@ footer{
         font-size: .5em;
     }
 
+    footer {
+        font-size: .6em;
+    }
 }
 
 }

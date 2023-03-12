@@ -240,7 +240,7 @@ footer{
     aside img {
         width: 70%;
     }
-    
+
 }
 
 
@@ -278,6 +278,10 @@ footer{
     #nav_menu ul li a {
         font-size: 1.2em;
     }
+    footer {
+        font-size: 1em;
+    }
+    
 }
 
 @media only screen and (max-width: 700px) {
@@ -328,9 +332,17 @@ footer{
         width: 25%;
     }
 
+    footer {
+        font-size: .8em;
+    }
+
 }
 @media only screen and (max-width: 395px) {
     body {
         font-size: 80%;
+    }
+
+    footer {
+        font-size: .6em;
     }
 }
